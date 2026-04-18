@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KWEIDER - Exclusive Offer Terms</title>
+    <style>
+        /* إعدادات الألوان للهوية البصرية */
+        :root {
+            --gold: #c5a059;
+            --dark-gold: #9e7e45;
+            --cream: #faf8f5;
+            --charcoal: #2c2c2c;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: var(--cream);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--charcoal);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: white;
+            padding: 40px 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid var(--gold);
+            text-align: center;
+            position: relative;
+        }
+
+        /* الخط الذهبي العلوي */
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--gold), var(--dark-gold));
+            border-radius: 15px 15px 0 0;
+        }
+
+        /* إعدادات صورة الشعار */
+        .main-logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .divider {
+            width: 50px;
+            height: 2px;
+            background-color: var(--gold);
+            margin: 20px auto;
+        }
+
+        .lang-section {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 15pt;
+            color: var(--charcoal);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        /* تنسيق الجملة الترويجية */
+        .promo-text {
+            font-size: 11pt;
+            color: var(--dark-gold);
+            margin-bottom: 20px;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        .terms-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* القسم الإنجليزي */
+        .lang-section.en {
+            text-align: left;
+        }
+        .terms-list.en li {
+            font-size: 11pt;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .terms-list.en li::before {
+            content: "◆";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-size: 10pt;
+        }
+
+        /* القسم العربي */
+        .lang-section.ar {
+            text-align: right;
+            font-family: Arial, sans-serif;
+        }
+        .terms-list.ar li {
+            font-size: 11pt;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            padding-right: 25px;
+            position: relative;
+        }
+        .terms-list.ar li::before {
+            content: "◆";
+            position: absolute;
+            right: 0;
+            color: var(--gold);
+            font-size: 10pt;
+        }
+
+        .disclaimer {
+            font-size: 8.5pt;
+            color: #d9534f;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 9pt;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: var(--dark-gold);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 10pt;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--charcoal);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <img src="VCPC8008.webp" alt="Kweider Special Offer" class="main-logo">
+        
+        <div class="divider"></div>
+
+        <div class="lang-section en" dir="ltr">
+            <h1>Exclusive Offer Terms</h1>
+            
+            <p class="promo-text">As a valued customer, we are delighted to offer you this exclusive discount to enjoy our premium selections.</p>
+            
+            <ul class="terms-list en">
+                <li><strong>Valid until the end of day on 30-05-2026.</strong></li>
+                <li>Valid for single use only per person.</li>
+                <li>Discount applies only to a minimum spend of £25 in a single transaction.</li>
+                <li>Discount is applicable on purchases up to a maximum of £100 per transaction.</li>
+                <li>Cannot be combined with any other offers.</li>
+                <li>Cannot be used for the purchase of gift cards or in conjunction with promotional offers.</li>
+                <li>This offer is valid for in-store purchases only.</li>
+                <li>Not redeemable for cash.</li>
+            </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="lang-section ar" dir="rtl">
+            <h1>شروط وأحكام العرض الحصري</h1>
+            
+            <p class="promo-text">بصفتك عميلاً مميزاً، يسعدنا أن نقدم لك هذا الخصم الحصري لتستمتع بأرقى منتجاتنا.</p>
+            
+            <ul class="terms-list ar">
+                <li><strong>صالح حتى نهاية يوم 30-05-2026.</strong></li>
+                <li>صالح للاستخدام مرة واحدة فقط لكل شخص.</li>
+                <li>يسري الخصم فقط على المشتريات التي لا تقل عن 25 جنيهًا إسترلينيًا في معاملة واحدة.</li>
+                <li>يُطبق الخصم على المشتريات بحد أقصى 100 جنيه إسترليني لكل معاملة.</li>
+                <li>لا يمكن دمجه مع أي عروض أخرى.</li>
+                <li>لا يمكن استخدامه لشراء بطاقات الهدايا أو بالاقتران مع العروض الترويجية الأخرى.</li>
+                <li>هذا العرض صالح للمشتريات داخل الفرع فقط.</li>
+                <li>غير قابل للاسترداد نقدًا.</li>
+            </ul>
+        </div>
+
+        <div class="disclaimer">
+            * In case of discrepancy between the English and Arabic text, the English version shall prevail.<br>
+            * في حال وجود أي تعارض بين النصين الإنجليزي والعربي، يُعتمد النص الإنجليزي.
+        </div>
+
+        <div class="footer">
+            <p>KWEIDER LIMITED | London Branch</p>
+            <p>184-186 High Street, Acton, London, W3 9NH</p>
+        </div>
+        
+        <div class="buttons-container">
+            <a href="https://www.kweidersweets.co.uk" class="btn">Visit Website</a>
+            <a href="https://www.kweidersweets.co.uk" class="btn" style="font-family: Arial;">زيارة الموقع</a>
+        </div>
+    </div>
+
+</body>
+</html>
